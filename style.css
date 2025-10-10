@@ -6,7 +6,7 @@ body {
 .navbar {
   display: flex;
   padding: 0 50px;
-  /* flex-direction: row; */
+  background: white;
   justify-content: space-between;
 }
 
@@ -19,7 +19,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #ff6ba8;
+  color: #e12562;
+}
+
+a:hover {
+  color: #ff6419;
 }
 
 #logo {
@@ -31,22 +35,24 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 50px;
-  background-color: #fff5fa;
+  background: linear-gradient(to right,white, #f35695);
   height: 550px;
 }
 
 #picture {
-  width: 40%;
+  width: 35%;
+  background: transparent;
 }
 
 .text {
   max-width: 50%;
   color: #131313;
+  background: transparent;
 }
 
 .text h1 {
   font-size: 35px;
-  color: #ff6ba8;
+  color: #e12562;
 }
 
 .text p {
@@ -56,14 +62,14 @@ a {
 }
 
 .text .highlight {
-  color: #ff6ba8;
+  color: #e12562;
   font-weight: bold;
 }
 
 .my-story {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #ff6ba8;
+  background-color: #ff6419;
   border: none;
   color: white;
   font-size: 20px;
@@ -72,13 +78,13 @@ a {
 }
 
 .my-story:hover {
-  background-color: #ff4578;
+  background-color: #ff8142;
 }
 
 .time {
   display: flex;
   flex-direction: column;
-  padding: 50px 100px;
+  padding: 50px 170px;
   align-items: center;
 }
 
@@ -86,14 +92,14 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
   width: 200px;
   text-align: center;
   padding: 20px;
-  background-color: #ff6ba8;
+  background-color: #f35695;
   border-radius: 10px;
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -103,6 +109,10 @@ a {
   width: 120px;
   height: 120px;
   border-radius: 10%;
+}
+
+.card:hover {
+  background-color: #ff6ba8;
 }
 
 footer {
@@ -137,14 +147,42 @@ footer {
 }
 
 .dark-mode button {
-  background-color: #444;
+  background-color: #ff6419;
   color: white;
+}
+
+.dark-mode .main {
+  background: linear-gradient(to right,#121212, #a31844);
+}
+
+.dark-mode .text {
+  color: #ff6ba8;
+  background-color: transparent;
+}
+
+.dark-mode h1 {
+  color: #ff6ba8;
+  background-color: transparent;
+}
+
+.dark-mode h3 {
+  background-color: transparent;
 }
 
 .dark-mode p{
   color: #e0e0e0;
+  background-color: transparent;
 }
 
 .dark-mode .highlight {
   color: #ff6ba8;
+  background-color: transparent;
+}
+
+.dark-mode .card {
+  background-color: #e12562;
+}
+
+.dark-mode .card:hover {
+  background-color: #e03a6f;
 }
